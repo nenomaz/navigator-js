@@ -15,6 +15,6 @@ var Navigator = {
 		}
 		var currentAction = this.actions.pop();
 		var backAction = this.actions[this.actions.length - 1];
-		backAction[0](arguments[1], arguments[2], arguments[3]);
+		backAction[0](backAction[1], backAction[2], backAction[3]);
 	}
 };
